@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Stacked Lotties</title>
+    <!-- Lottie Player -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 200vh; /* Ensure the body is tall enough to allow scrolling */
+        overflow-x: hidden; /* Prevent horizontal scroll */
+        display: flex;
+        flex-direction: column;
+      }
+      lottie-player {
+        width: 100vw; /* Full width of the viewport */
+        height: 100vh; /* Full height of the viewport */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- First Lottie Animation -->
+    <lottie-player
+      src="./assets/data2.json"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay
+    ></lottie-player>
+
+    <!-- Second Lottie Animation -->
+    <lottie-player
+      src="./assets/data3.json"
+      background="transparent"
+      speed="1"
+      loop
+      autoplay
+    ></lottie-player>
+
+    <script>
+      // Ensure the page scrolls to the top when it is loaded
+      window.onload = () => {
+        window.scrollTo(0, 0); // Scroll to the top of the page
+      };
+    </script>
+  </body>
+</html>
